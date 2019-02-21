@@ -8,7 +8,7 @@ namespace Example.Tests
         [Test]
         public void DoReproduce()
         {
-            Assert.Throws<MissingMethodException>(() => Loader.Load());
+            Assert.Throws<TypeLoadException>(() => Loader.Load());
         }
     }
 }
